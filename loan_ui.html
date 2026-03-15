@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Loan Approval Prediction</title>
+
+<style>
+
+body{
+font-family: Arial;
+background-color:#f2f2f2;
+text-align:center;
+}
+
+.container{
+background:white;
+width:350px;
+margin:auto;
+padding:20px;
+margin-top:80px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+input{
+width:90%;
+padding:8px;
+margin:8px;
+}
+
+button{
+background:#4CAF50;
+color:white;
+padding:10px;
+border:none;
+width:100%;
+cursor:pointer;
+}
+
+button:hover{
+background:#45a049;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Loan Approval Predictor</h2>
+
+<input type="number" id="income" placeholder="Income">
+
+<input type="number" id="credit" placeholder="Credit Score">
+
+<input type="number" id="loan" placeholder="Loan Amount">
+
+<input type="number" id="employment" placeholder="Employment (1=Yes 0=No)">
+
+<button onclick="predictLoan()">Predict Loan</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script>
+
+function predictLoan(){
+
+var income=document.getElementById("income").value;
+var credit=document.getElementById("credit").value;
+var loan=document.getElementById("loan").value;
+var employment=document.getElementById("employment").value;
+
+if(income && credit && loan && employment){
+
+document.getElementById("result").innerHTML="Prediction will appear here";
+
+}
+else{
+
+document.getElementById("result").innerHTML="Please enter all values";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
