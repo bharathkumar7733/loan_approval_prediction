@@ -13,7 +13,7 @@ This project demonstrates:
 * AI prediction
 * Simple user interface for predictions
 
----
+------
 
 ## 🧠 Technologies Used
 
