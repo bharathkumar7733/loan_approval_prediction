@@ -28,7 +28,7 @@ This project demonstrates:
 ## 📂 Project Structure
 
 ```
-loan-approval-project
+ loan-approval-project
 │
 ├── database_setup.py      # Creates database and inserts sample data
 ├── train_model.py         # Trains machine learning model
